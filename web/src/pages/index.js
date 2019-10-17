@@ -10,6 +10,7 @@ import Container from '../components/container'
 import GraphQLErrorList from '../components/graphql-error-list'
 import SEO from '../components/seo'
 import Layout from '../containers/layout'
+import Hero from '../components/hero'
 
 export const query = graphql`
   fragment SanityImage on SanityMainImage {
@@ -37,6 +38,7 @@ export const query = graphql`
   query IndexPageQuery {
     site: sanitySiteSettings(_id: { regex: "/(drafts.|)siteSettings/" }) {
       title
+      subtitle
       description
       keywords
     }
@@ -96,7 +98,7 @@ const IndexPage = props => {
         keywords={site.keywords}
       />
       <Container>
-        <h1 hidden>Welcome to {site.title}</h1>
+           <Hero />
         {postNodes && (
           <BlogPostPreviewList
             title='Latest blog posts'
