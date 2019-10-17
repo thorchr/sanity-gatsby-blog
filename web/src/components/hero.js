@@ -6,7 +6,7 @@ const Hero = ()  => (
 
         <div>
             <LazyHero 
-            imageSrc={"https://unsplash.it/2000/1000"}
+            imageSrc={"/images/luftbilde.jpg"}
             parallaxOffset={100}
             >
             <h1>ET GODT STED Å BO</h1>
