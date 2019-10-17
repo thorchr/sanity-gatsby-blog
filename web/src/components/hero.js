@@ -2,13 +2,15 @@ import React from 'react'
 import LazyHero from 'react-lazy-hero'
 
 
+
 const Hero = ()  => (
 
         <div>
             <LazyHero 
-            imageSrc={"/images/luftbilde.jpg"}
+            imageSrc={`luftbilde.jpg`}
             parallaxOffset={100}
             >
+           
             <h1>ET GODT STED Å BO</h1>
             </LazyHero>
 

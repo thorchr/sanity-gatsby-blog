@@ -5,7 +5,8 @@ import {cn} from '../lib/helpers'
 
 import styles from './header.module.css'
 import Logo from '../images/logo.svg'
-import Hero from '../components/hero'
+
+
 
 
 const Header = ({onHideNav, onShowNav, showNav, siteTitle}) => (
