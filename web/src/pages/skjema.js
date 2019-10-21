@@ -6,14 +6,28 @@ import Container from '../components/container'
 import GraphQLErrorList from '../components/graphql-error-list'
 import SEO from '../components/seo'
 import Layout from '../containers/layout'
-
+import Img from "gatsby-image"
 import {responsiveTitle1} from '../components/typography.module.css'
 
 export const query = graphql`
   query SkjemaPageQuery{
-     sanityPage(slug: {current: {eq: "skjema"}}) {
-    title
+     sanityPage(mainImage: {}, title: {eq: "Skjema"}) {
+    mainImage {
+      asset {
+        fluid {
+          base64
+          aspectRatio
+          src
+          srcSet
+          srcWebp
+          srcSetWebp
+          sizes
+        }
+      }
     }
+      title
+  }
+
   }
 `
 
@@ -36,7 +50,7 @@ const SkjemaPage = props => {
       <SEO title={title} />
       <Container>
         <h1 className={responsiveTitle1}>{title}</h1>
-        <p></p>
+        <Img fluid={data.sanityPage.mainImage.asset.fluid} />
       </Container>
     </Layout>
   )
