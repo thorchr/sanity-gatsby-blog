@@ -4,7 +4,7 @@ import Icon from './icon'
 import {cn} from '../lib/helpers'
 
 import styles from './header.module.css'
-import Logo from '../images/logo.svg'
+
 
 
 
@@ -30,7 +30,7 @@ const Header = ({onHideNav, onShowNav, showNav, siteTitle}) => (
             <Link to='/nyheter/'>Nyheter</Link>
           </li>
           <li>
-            <Link to='/info/'>Praktisk informasjon</Link>
+            <Link to='/info/'>Info</Link>
           </li>
            <li>
             <Link to='/skjema/'>Skjema</Link>
