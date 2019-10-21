@@ -38,6 +38,9 @@ const Header = ({onHideNav, onShowNav, showNav, siteTitle}) => (
           <li>
             <Link to='/om/'>Om Øreåsen borettslag</Link>
           </li>
+             <li>
+            <Link to='/kontakt/'>Kontakt</Link>
+          </li>
 
         </ul>
       </nav>

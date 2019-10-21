@@ -3,6 +3,7 @@ import LazyHero from 'react-lazy-hero'
 
 
 
+
 const Hero = ()  => (
 
         <div>

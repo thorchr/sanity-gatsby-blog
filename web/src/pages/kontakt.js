@@ -11,7 +11,7 @@ import Img from "gatsby-image"
 import {responsiveTitle1} from '../components/typography.module.css'
 
 export const query = graphql`
-  query AboutPageQuery{
+  query ContactPageQuery{
     sanityPage(mainImage: {}, title: {eq: "Kontakt"}) {
       
     mainImage {
