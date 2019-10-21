@@ -7,11 +7,13 @@ import GraphQLErrorList from '../components/graphql-error-list'
 import SEO from '../components/seo'
 import Layout from '../containers/layout'
 import Img from "gatsby-image"
+
 import {responsiveTitle1} from '../components/typography.module.css'
 
 export const query = graphql`
-  query InfoPageQuery{
-        sanityPage(mainImage: {}, title: {eq: "Info"}) {
+  query AboutPageQuery{
+    sanityPage(mainImage: {}, title: {eq: "Kontakt"}) {
+      
     mainImage {
       asset {
         fluid {
@@ -27,13 +29,13 @@ export const query = graphql`
     }
       title
   }
+
   }
 `
 
-const InfoPage = props => {
+const ContactPage = props => {
   const {data, errors} = props
   const {title} = data.sanityPage
-
 
   if (errors) {
     return (
@@ -51,10 +53,9 @@ const InfoPage = props => {
       <Container>
         <h1 className={responsiveTitle1}>{title}</h1>
         <Img fluid={data.sanityPage.mainImage.asset.fluid} />
-        <p></p>
       </Container>
     </Layout>
   )
 }
 
-export default InfoPage
+export default ContactPage

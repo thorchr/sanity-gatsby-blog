@@ -13,6 +13,7 @@ import {responsiveTitle1} from '../components/typography.module.css'
 export const query = graphql`
   query AboutPageQuery{
     sanityPage(mainImage: {}, title: {eq: "Om Øreåsen borettslag"}) {
+      
     mainImage {
       asset {
         fluid {
