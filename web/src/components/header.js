@@ -13,8 +13,7 @@ const Header = ({onHideNav, onShowNav, showNav, siteTitle}) => (
   <div className={styles.root}>
     <div className={styles.wrapper}>
       <div className={styles.branding}>
-        <Link to='/'>
-           <Logo />
+        <Link to='/'>{siteTitle}
         </Link>
    
 
@@ -28,11 +27,18 @@ const Header = ({onHideNav, onShowNav, showNav, siteTitle}) => (
       <nav className={cn(styles.nav, showNav && styles.showNav)}>
         <ul>
           <li>
-            <Link to='/archive/'>Nyheter</Link>
+            <Link to='/nyheter/'>Nyheter</Link>
+          </li>
+          <li>
+            <Link to='/info/'>Praktisk informasjon</Link>
+          </li>
+           <li>
+            <Link to='/skjema/'>Skjema</Link>
           </li>
           <li>
             <Link to='/om/'>Om Øreåsen borettslag</Link>
           </li>
+
         </ul>
       </nav>
     </div>

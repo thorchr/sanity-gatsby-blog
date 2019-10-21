@@ -98,12 +98,13 @@ const IndexPage = props => {
         keywords={site.keywords}
       />
       <Container>
+
            <Hero />
         {postNodes && (
           <BlogPostPreviewList
-            title='Latest blog posts'
+            title='Nyheter fra styret'
             nodes={postNodes}
-            browseMoreHref='/archive/'
+            browseMoreHref='/nyheter/'
           />
         )}
       </Container>
