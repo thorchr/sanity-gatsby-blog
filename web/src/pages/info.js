@@ -8,6 +8,8 @@ import SEO from '../components/seo'
 import Layout from '../containers/layout'
 import Img from "gatsby-image"
 import {responsiveTitle1} from '../components/typography.module.css'
+import {imageUrlFor} from '../lib/image-url'
+import PortableText from '../components/portableText'
 
 export const query = graphql`
   query InfoPageQuery{
@@ -51,7 +53,6 @@ const InfoPage = props => {
       <Container>
         <h1 className={responsiveTitle1}>{title}</h1>
         <Img fluid={data.sanityPage.mainImage.asset.fluid} />
-        <p></p>
       </Container>
     </Layout>
   )
