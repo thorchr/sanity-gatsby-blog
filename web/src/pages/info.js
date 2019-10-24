@@ -37,6 +37,7 @@ const InfoPage = props => {
   const {title} = data.sanityPage
 
 
+
   if (errors) {
     return (
       <Layout>
@@ -53,6 +54,7 @@ const InfoPage = props => {
       <Container>
         <h1 className={responsiveTitle1}>{title}</h1>
         <Img fluid={data.sanityPage.mainImage.asset.fluid} />
+       
       </Container>
     </Layout>
   )
