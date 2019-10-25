@@ -8,7 +8,6 @@ import SEO from '../components/seo'
 import Layout from '../containers/layout'
 import Img from "gatsby-image"
 import {responsiveTitle1} from '../components/typography.module.css'
-import {imageUrlFor} from '../lib/image-url'
 import PortableText from '../components/portableText'
 
 
