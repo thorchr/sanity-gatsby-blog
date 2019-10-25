@@ -11,23 +11,30 @@ import {responsiveTitle1} from '../components/typography.module.css'
 import {imageUrlFor} from '../lib/image-url'
 import PortableText from '../components/portableText'
 
+
 export const query = graphql`
   query InfoPageQuery{
         sanityPage(mainImage: {}, title: {eq: "Info"}) {
+    body {
+      sanityChildren {
+        text
+      }
+    }
+    title
+    _rawBody
     mainImage {
       asset {
         fluid {
-          base64
           aspectRatio
+          base64
+          sizes
           src
           srcSet
-          srcWebp
           srcSetWebp
-          sizes
+          srcWebp
         }
       }
     }
-      title
   }
   }
 `
@@ -35,6 +42,9 @@ export const query = graphql`
 const InfoPage = props => {
   const {data, errors} = props
   const {title} = data.sanityPage
+  const {_rawBody} = data.sanityPage
+
+ 
 
 
 
@@ -54,7 +64,8 @@ const InfoPage = props => {
       <Container>
         <h1 className={responsiveTitle1}>{title}</h1>
         <Img fluid={data.sanityPage.mainImage.asset.fluid} />
-       
+         <PortableText blocks={_rawBody} />
+     
       </Container>
     </Layout>
   )

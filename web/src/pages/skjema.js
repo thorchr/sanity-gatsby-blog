@@ -8,24 +8,31 @@ import SEO from '../components/seo'
 import Layout from '../containers/layout'
 import Img from "gatsby-image"
 import {responsiveTitle1} from '../components/typography.module.css'
+import PortableText from '../components/portableText'
 
 export const query = graphql`
   query SkjemaPageQuery{
-     sanityPage(mainImage: {}, title: {eq: "Skjema"}) {
+           sanityPage(mainImage: {}, title: {eq: "Skjema"}) {
+    body {
+      sanityChildren {
+        text
+      }
+    }
+    title
+    _rawBody
     mainImage {
       asset {
         fluid {
-          base64
           aspectRatio
+          base64
+          sizes
           src
           srcSet
-          srcWebp
           srcSetWebp
-          sizes
+          srcWebp
         }
       }
     }
-      title
   }
 
   }
@@ -34,6 +41,7 @@ export const query = graphql`
 const SkjemaPage = props => {
   const {data, errors} = props
   const {title} = data.sanityPage
+  const {_rawBody} = data.sanityPage
 
   if (errors) {
     return (
@@ -51,6 +59,8 @@ const SkjemaPage = props => {
       <Container>
         <h1 className={responsiveTitle1}>{title}</h1>
         <Img fluid={data.sanityPage.mainImage.asset.fluid} />
+        <PortableText blocks={_rawBody} />
+     
       </Container>
     </Layout>
   )

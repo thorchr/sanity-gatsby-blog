@@ -19,11 +19,13 @@
   },
   "dependencies": {
     "@sanity/block-content-to-react": "^2.0.7",
+    "@sanity/client": "^0.142.6",
     "bootstrap-4-react": "0.0.59",
     "gatsby-plugin-react-svg": "^2.1.2",
     "react": "^16.10.2",
     "react-dom": "^16.10.2",
     "react-lazy-hero": "^2.0.0",
-    "styled-components": "^4.4.0"
+    "styled-components": "^4.4.0",
+    "use-promise": "^2.0.1"
   }
 }

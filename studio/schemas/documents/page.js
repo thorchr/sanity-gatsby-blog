@@ -64,7 +64,7 @@ export default {
     },
     {
       name: 'body',
-      type: 'richText',
+      type: 'bodyPortableText',
       title: 'Body text'
     }
   ],
