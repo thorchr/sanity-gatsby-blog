@@ -12,7 +12,8 @@ const Hero = ()  => (
             parallaxOffset={100}
             >
            
-            <h1>ET GODT STED Å BO</h1>
+            <h1>Velkommen til Øreåsen borettslag</h1>
+            <h2>ET GODT STED Å BO</h2>
             </LazyHero>
 
             {/* ... */}
