@@ -7,7 +7,7 @@
   --color-light-gray: #b4bcc7;
   --color-very-light-gray: #e7ebed;
   --color-white: #ffffff;
-  --color-accent: white;
+  --color-accent: rgb(241, 122, 2);
 
   /* Typography */
   --unit: 16;

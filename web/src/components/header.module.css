@@ -70,9 +70,11 @@
 
   @nest & ul li a {
     display: block;
-    color: white;
+    color: var(--color-white);
     text-decoration: none;
   }
+
+  
 
   @media (hover: hover) {
     @nest & ul li a:hover {
