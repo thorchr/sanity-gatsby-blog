@@ -10,7 +10,8 @@ import Container from '../components/container'
 import GraphQLErrorList from '../components/graphql-error-list'
 import SEO from '../components/seo'
 import Layout from '../containers/layout'
-import Hero from '../components/hero'
+import Carousel from '../components/Carousel'
+import 'react-responsive-carousel/lib/styles/carousel.min.css';
 
 export const query = graphql`
   fragment SanityImage on SanityMainImage {
@@ -98,8 +99,8 @@ const IndexPage = props => {
         keywords={site.keywords}
       />
       <Container>
+        <Carousel />
 
-           <Hero />
         {postNodes && (
           <BlogPostPreviewList
             title='Nyheter fra styret'

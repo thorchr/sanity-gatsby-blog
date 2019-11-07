@@ -14,18 +14,21 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
-    "@sanity/cli": "^0.142.7",
-    "lerna": "^3.18.1"
+    "@sanity/cli": "^0.142.9",
+    "lerna": "^3.18.3"
   },
   "dependencies": {
     "@sanity/block-content-to-react": "^2.0.7",
     "@sanity/client": "^0.142.6",
     "bootstrap-4-react": "0.0.59",
+    "gatsby": "^2.17.10",
+    "gatsby-plugin-postcss": "^2.1.13",
     "gatsby-plugin-react-svg": "^2.1.2",
-    "react": "^16.10.2",
-    "react-dom": "^16.10.2",
+    "react": "^16.11.0",
+    "react-dom": "^16.11.0",
     "react-lazy-hero": "^2.0.0",
-    "styled-components": "^4.4.0",
+    "react-responsive-carousel": "^3.1.51",
+    "styled-components": "^4.4.1",
     "use-promise": "^2.0.1"
   }
 }
