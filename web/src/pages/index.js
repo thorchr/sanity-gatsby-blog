@@ -11,7 +11,6 @@ import GraphQLErrorList from '../components/graphql-error-list'
 import SEO from '../components/seo'
 import Layout from '../containers/layout'
 import Carousel from '../components/Carousel'
-import 'react-responsive-carousel/lib/styles/carousel.min.css';
 
 export const query = graphql`
   fragment SanityImage on SanityMainImage {
