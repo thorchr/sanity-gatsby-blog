@@ -4,7 +4,6 @@ const ContactForm = () => (
   <div>
     <form name='contact'
       method='post'
-      action='/success'
       data-netlify='true'
       data-netlify-honeypot='bot-field'
     >
