@@ -3,7 +3,12 @@ import {Col, Row, Button, Form, FormGroup, Label, Input} from 'reactstrap'
 
 const ContactForm = (props) => {
   return (
-    <Form name='contact' method='POST' data-netlify='true'>
+    <Form 
+      name='contact' 
+      method='POST' 
+      data-netlify='true'
+      data-netliify-honeypot='bot-field'
+      >
       <Row form>
         <Col md={6}>
           <FormGroup>
