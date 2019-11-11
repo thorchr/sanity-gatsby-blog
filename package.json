@@ -33,6 +33,7 @@
     "react-lazy-hero": "^2.0.0",
     "react-responsive-carousel": "^3.1.51",
     "reactstrap": "^8.1.1",
+    "sanity": "^0.144.0",
     "styled-components": "^4.4.1",
     "typescript": "^3.7.2",
     "use-promise": "^2.0.1"
