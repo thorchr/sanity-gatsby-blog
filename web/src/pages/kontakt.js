@@ -7,6 +7,7 @@ import GraphQLErrorList from '../components/graphql-error-list'
 import SEO from '../components/seo'
 import Layout from '../containers/layout'
 import Img from "gatsby-image"
+import ContactForm from '../components/ContactForm'
 
 import {responsiveTitle1} from '../components/typography.module.css'
 
@@ -52,7 +53,7 @@ const ContactPage = props => {
       <SEO title={title} />
       <Container>
         <h1 className={responsiveTitle1}>{title}</h1>
-        <Img fluid={data.sanityPage.mainImage.asset.fluid} />
+        <ContactForm />
       </Container>
     </Layout>
   )
