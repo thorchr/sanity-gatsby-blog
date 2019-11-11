@@ -1,43 +1,22 @@
 import React from 'react'
-import {Col, Row, Button, Form, FormGroup, Label, Input} from 'reactstrap'
 
-const ContactForm = (props) => {
-  return (
-    <Form
-      name='contact'
-      method='POST'
-      data-netlify='true'
-      data-netliify-honeypot='bot-field'
-    >
-      <Row form>
-        <Col md={6}>
-          <FormGroup>
-            <Label for='firstName'>Fornavn</Label>
-            <Input type='text' name='name' id='exampleName' placeholder='Fornavn' />
-          </FormGroup>
-        </Col>
-        <Col md={6}>
-          <FormGroup>
-            <Label for='lastName'>Etternavn</Label>
-            <Input type='text' name='lastName' id='exampleName' placeholder='Etternavn' />
-          </FormGroup>
-        </Col>
-      </Row>
-      <FormGroup>
-        <Label for='exampleEmail'>Email</Label>
-        <Input type='email' name='email' id='exampleEmail' placeholder='E-post' />
-      </FormGroup>
-      <FormGroup>
-        <Label for='exampleAddress'>Address</Label>
-        <Input type='text' name='address' id='exampleAddress' placeholder='1234 Main St' />
-      </FormGroup>
-      <FormGroup>
-        <Label for='exampleText'>Text Area</Label>
-        <Input type='textarea' name='text' id='exampleText' />
-      </FormGroup>
-      <Button type='submit'>Submit</Button>
-    </Form>
-  )
-}
+const ContactForm = () => (
+  <div>
+    <form name='contact' method='POST' data-netlify='true'>
+      <p>
+        <label>Your Name: <input type='text' name='name' /></label>
+      </p>
+      <p>
+        <label>Your Email: <input type='email' name='email' /></label>
+      </p>
+      <p>
+        <label>Message: <textarea name='message' /></label>
+      </p>
+      <p>
+        <button type='submit'>Send</button>
+      </p>
+    </form>
+  </div>
+)
 
 export default ContactForm
