@@ -9,7 +9,7 @@ const ContactForm = () => (
       data-netlify-honeypot='bot-field'
     >
       <input name='name' placeholde='Ditt navn' type='text' />
-      <button />
+      <button>Send</button>
 
     </form>
   </div>
