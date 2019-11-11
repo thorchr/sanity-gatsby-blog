@@ -10,7 +10,10 @@ import Container from '../components/container'
 import GraphQLErrorList from '../components/graphql-error-list'
 import SEO from '../components/seo'
 import Layout from '../containers/layout'
-import Carousel from '../components/Carousel'
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Slider from '../components/Slider'
+
+
 
 export const query = graphql`
   fragment SanityImage on SanityMainImage {
@@ -98,7 +101,7 @@ const IndexPage = props => {
         keywords={site.keywords}
       />
       <Container>
-        <Carousel />
+        <Slider />
 
         {postNodes && (
           <BlogPostPreviewList
