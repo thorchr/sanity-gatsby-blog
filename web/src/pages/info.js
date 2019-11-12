@@ -6,10 +6,9 @@ import Container from '../components/container'
 import GraphQLErrorList from '../components/graphql-error-list'
 import SEO from '../components/seo'
 import Layout from '../containers/layout'
-import Img from "gatsby-image"
+import Img from 'gatsby-image'
 import {responsiveTitle1} from '../components/typography.module.css'
 import PortableText from '../components/portableText'
-
 
 export const query = graphql`
   query InfoPageQuery{
@@ -43,10 +42,6 @@ const InfoPage = props => {
   const {title} = data.sanityPage
   const {_rawBody} = data.sanityPage
 
- 
-
-
-
   if (errors) {
     return (
       <Layout>
@@ -55,16 +50,14 @@ const InfoPage = props => {
     )
   }
 
-  
-
   return (
     <Layout>
       <SEO title={title} />
       <Container>
         <h1 className={responsiveTitle1}>{title}</h1>
         <Img fluid={data.sanityPage.mainImage.asset.fluid} />
-         <PortableText blocks={_rawBody} />
-     
+        <PortableText blocks={_rawBody} />
+
       </Container>
     </Layout>
   )

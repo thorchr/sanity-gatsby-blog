@@ -5,8 +5,8 @@ import GraphQLErrorList from '../components/graphql-error-list'
 import SEO from '../components/seo'
 import Layout from '../containers/layout'
 import ContactForm from '../components/ContactForm'
-
 import {responsiveTitle1} from '../components/typography.module.css'
+import PortableText from '../components/portableText'
 
 export const query = graphql`
   query ContactPageQuery{
@@ -34,6 +34,7 @@ export const query = graphql`
 const ContactPage = props => {
   const {data, errors} = props
   const {title} = data.sanityPage
+  const {_rawBody} = data.sanityPage
 
   if (errors) {
     return (
@@ -50,6 +51,7 @@ const ContactPage = props => {
       <SEO title={title} />
       <Container>
         <h1 className={responsiveTitle1}>{title}</h1>
+        <PortableText blocks={_rawBody} />
         <ContactForm />
       </Container>
     </Layout>
