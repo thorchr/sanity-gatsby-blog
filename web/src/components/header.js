@@ -32,6 +32,10 @@ const Header = ({onHideNav, onShowNav, showNav, siteTitle}) => (
             <Link to='/skjema/'>Skjema</Link>
           </li>
           <li>
+            <Link to='/vedtekter/'>vedtekter</Link>
+          </li>
+          
+          <li>
             <Link to='/om/'>Om Øreåsen borettslag</Link>
           </li>
              <li>
