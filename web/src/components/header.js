@@ -32,7 +32,7 @@ const Header = ({onHideNav, onShowNav, showNav, siteTitle}) => (
             <Link to='/skjema/'>Skjema</Link>
           </li>
           <li>
-            <Link to='/vedtekter/'>vedtekter</Link>
+            <Link to='/vedtekter/'>Vedtekter</Link>
           </li>
           
           <li>

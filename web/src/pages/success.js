@@ -1,7 +1,7 @@
 import React from 'react'
 import Container from '../components/container'
 import Layout from '../containers/layout'
-import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/css/bootstrap.min.css'
 import Link from 'gatsby-link'
 
 export default () => (
