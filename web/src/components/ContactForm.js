@@ -10,13 +10,45 @@ const ContactForm = () => (
         data-netlify='true'
         data-netlify-honeypot='bot-field'
       >
-        <FormGroup>
+        <Row>
+          <Col xs="6">
+          <FormGroup>
+          <Label for="exampleFirstName">Fornavn</Label>
           <input type='hidden' name='form-name' value='contact' />
-          <Input name='name' placeholder='Ditt navn' type='text' />
+          <Input name='firstName' placeholder='Ditt navn' type='text' />
         </FormGroup>
-        <FormGroup>
-          <Input name='email' placeholder='E-post' type='email' />
+          </Col>
+          <Col xs="6">
+          <FormGroup>
+          <Label for="exampleLastName">Etternavn</Label>
+          <Input name='lastName' placeholder='Etternavn' type='email' />
         </FormGroup>
+          </Col>
+          </Row>
+          <Row>
+            <Col  xs="6">
+            <FormGroup>
+          <Label for="exampleEmail">Email</Label>
+          <Input name='email' placeholder='navn@domene.no' type='email' />
+        </FormGroup>
+            </Col>
+            <Col  xs="6">
+              <FormGroup>
+              <Label for="exampleAddress">Telefon</Label>
+              <Input name='telephone'type="tel" placeholder="+4712345678" />
+              </FormGroup>
+            
+            </Col>
+          </Row>
+       
+          <FormGroup>
+        <Label for="exampleAddress">Addresse</Label>
+        <Input type="text" name="address" id="exampleAddress" placeholder="Øreåsen borettslag"/>
+      </FormGroup>
+      <FormGroup>
+        <Label for="exampleText">Beskjed til styret</Label>
+        <Input type="textarea" name="text" id="exampleText" />
+      </FormGroup>
 
 
         <Button>Send</Button>
