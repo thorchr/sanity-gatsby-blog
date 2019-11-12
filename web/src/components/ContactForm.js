@@ -1,18 +1,28 @@
 import React from 'react'
+import {Container, Row, Col, Button, Form, FormGroup, Label, Input, FormText} from 'reactstrap'
 
 const ContactForm = () => (
   <div>
-    <form
-      name='contact'
-      method='post'
-      data-netlify='true'
-      data-netlify-honeypot='bot-field'
-    >
-      <input type="hidden" name="form-name" value="contact" />
-      <input name='name' placeholder='Ditt navn' type='text' />
-      <button>Send</button>
+    <Container>
+      <Form
+        name='contact'
+        method='post'
+        data-netlify='true'
+        data-netlify-honeypot='bot-field'
+      >
+        <FormGroup>
+          <input type='hidden' name='form-name' value='contact' />
+          <Input name='name' placeholder='Ditt navn' type='text' />
+        </FormGroup>
+        <FormGroup>
+          <Input name='email' placeholder='E-post' type='email' />
+        </FormGroup>
 
-    </form>
+
+        <Button>Send</Button>
+
+      </Form>
+    </Container>
   </div>
 )
 
