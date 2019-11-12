@@ -11,22 +11,27 @@ import PortableText from '../components/portableText'
 export const query = graphql`
   query ContactPageQuery{
     sanityPage(mainImage: {}, title: {eq: "Kontakt"}) {
-      
-    mainImage {
-      asset {
-        fluid {
-          base64
-          aspectRatio
-          src
-          srcSet
-          srcWebp
-          srcSetWebp
-          sizes
+      body {
+        sanityChildren {
+          text
+        }
+      }
+      title
+      _rawBody
+      mainImage {
+        asset {
+          fluid {
+            aspectRatio
+            base64
+            sizes
+            src
+            srcSet
+            srcSetWebp
+            srcWebp
+          }
         }
       }
     }
-      title
-  }
 
   }
 `

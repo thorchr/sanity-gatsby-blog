@@ -1,5 +1,5 @@
 import React from 'react'
-import {Container, Row, Col, Button, Form, FormGroup, Label, Input, FormText} from 'reactstrap'
+import {Container, Row, Col, Button, Form, FormGroup, Label, Input} from 'reactstrap'
 
 const ContactForm = () => (
   <div>
@@ -27,22 +27,22 @@ const ContactForm = () => (
         </Row>
         <Row>
           <Col xs='6'>
-              <FormGroup>
+            <FormGroup>
               <Label for='exampleEmail'>E-post</Label>
               <Input name='email' placeholder='navn@domene.no' type='email' />
             </FormGroup>
           </Col>
           <Col xs='6'>
             <FormGroup>
-                <Label for='exampleAddress'>Telefon</Label>
-                <Input name='telephone'type='tel' placeholder='+4712345678' />
+              <Label for='exampleAddress'>Telefon</Label>
+              <Input name='telephone'type='tel' placeholder='+4712345678' />
             </FormGroup>
 
           </Col>
         </Row>
 
         <FormGroup>
-          <Label for='exampleAddress'>Addresse</Label>
+          <Label for='exampleAddress'>Adresse</Label>
           <Input type='text' name='address' id='exampleAddress' placeholder='Øreåsen borettslag' />
         </FormGroup>
         <FormGroup>
