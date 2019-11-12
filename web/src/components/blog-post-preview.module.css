@@ -5,7 +5,9 @@
   display: blog;
   color: inherit;
   text-decoration: none;
-  background-color: #FAFFA8;
+  border-style:solid;
+  border-width:2px;
+  background-color: rgb(250, 250, 250);
   box-shadow: 0 10px 6px -6px #777;
 }
 
